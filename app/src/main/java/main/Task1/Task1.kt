@@ -6,7 +6,7 @@ import kotlin.math.pow
 class Task1 {
 
     companion object {
-        fun sin(x: Double) : Double? {
+        fun sin(x: Double) : Double {
             var ans = 0.0
             var tmp = 1.0
             val eps = 10.0.pow(-9.0)

@@ -1,6 +1,6 @@
 package main.Task2
 
-class Task2(var array : Array<Int>) {
+class Task2(var array: Array<Int>) {
     var radix : Int = 1
 
     private fun sortStep() {
@@ -19,12 +19,13 @@ class Task2(var array : Array<Int>) {
         }
     }
 
-    fun radixSort() {
+    fun radixSort() : Array<Int> {
         val maxElement = array.max()
         println(maxElement)
         while (maxElement / radix > 0) {
             sortStep()
             radix *= 10
         }
+        return array
     }
 }

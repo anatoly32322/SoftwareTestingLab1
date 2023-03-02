@@ -30,7 +30,7 @@ interface Character {
     }
 
     fun areYouInTheSamePlace(character: Character) : Boolean {
-        return character.location.name == character.location.name
+        return location.name == character.location.name
     }
 
     fun whatIsYourSpecies() : String

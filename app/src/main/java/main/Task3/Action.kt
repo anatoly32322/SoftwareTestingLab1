@@ -15,6 +15,8 @@ class Action(_actionName: String = "chilling", private var doAction: Boolean = f
         }
 
     init {
+        if (_actionName != "chilling")
+            doAction = true
         actionName = _actionName
     }
 
